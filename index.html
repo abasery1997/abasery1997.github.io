@@ -73,7 +73,7 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> home </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu home-drop">
                         <li><a class="dropdown-item gray-button-border" href="#"> home 1</a></li>
                         <li><a class="dropdown-item " href="#"> home 2 </a></li>
                     </ul>
@@ -81,7 +81,7 @@
                 <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> headers </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu headers-drop">
                         <li><a class="dropdown-item gray-button-border" href="#"> headers style 1</a></li>
                         <li><a class="dropdown-item gray-button-border" href="#"> headers style 2 </a></li>
                         <li><a class="dropdown-item gray-button-border" href="#"> headers style 3 </a></li>
@@ -90,7 +90,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> BLOG POST </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu blog-drop">
                         <li><a class="dropdown-item gray-button-border" href="#"> blog grid</a></li>
                         <li><a class="dropdown-item gray-button-border" href="#"> Blog masonary </a></li>
                         <li><a class="dropdown-item gray-button-border" href="#"> clasic </a></li>
@@ -99,7 +99,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> SERVICES </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu services-drop">
                         <li><a class="dropdown-item gray-button-border" href="#"> full width</a></li>
                         <li><a class="dropdown-item gray-button-border" href="#">services 2 column </a></li>
                         <li><a class="dropdown-item gray-button-border" href="#">services 3 column </a></li>
@@ -108,7 +108,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> FEATURES </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu features-drop">
                         <li><a class="dropdown-item gray-button-border" href="#"> shortcodes </a></li>
                         <li><a class="dropdown-item gray-button-border" href="#"> FEATURES 2 column </a></li>
                         <li><a class="dropdown-item gray-button-border" href="#"> FEATURES 3 column </a></li>
@@ -117,7 +117,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> PAGES </a>
-                    <div class="dropdown-menu custom-width">
+                    <div class="dropdown-menu pages-drop">
                         <div class="row">
                             <div class="col-3 border-end">
                                 <ul> Project Style 1
@@ -376,10 +376,7 @@
                         </div>
                         <div class="col">
                             <div class="border border-white rounded services-div position-relative">
-                                <i class="fas fa-desktop services-icon position-relative">
-                                    <i
-                                        class="fas fa-paint-brush text-white position-absolute start-50 bottom-50 min-vh-50"></i>
-                                </i>
+                                <i class="fas fa-laptop-code services-icon"></i>
                                 <h4 class="text-center text-white fw-bold">Web Design</h4>
                                 <div class="position-absolute services-info w-100 h-100 rounded bg-white pt-5  ">
                                     <h4 class="text-center text-dark fw-bold">Web Design</h4>
@@ -405,7 +402,9 @@
                         </div>
                         <div class="col">
                             <div class="border border-white rounded services-div position-relative">
-                                <i class="fas fa-desktop services-icon"></i>
+                                <i class="fas fa-desktop services-icon position-relative">
+                                    <i class="fab fa-node text-white position-absolute node-icon"></i>
+                                </i>
                                 <h4 class="text-center text-white fw-bold">Web Devolopment</h4>
                                 <div class="position-absolute services-info w-100 h-100 rounded bg-white pt-5  ">
                                     <h4 class="text-center text-dark fw-bold">Web Devolopment</h4>
@@ -480,9 +479,9 @@
         <!-- start our work  -->
         <div class="row row-cols-3 our-work-image mb-5">
             <div class="col my-4 ">
-                <div class="position-relative overflow-hidden shadow-div rounded">
+                <div class="position-relative overflow-hidden shadow-div rounded d-flex justify-content-center">
                     <img src="images/work1.jpg" alt="" class="rounded">
-                    <div class="position-absolute  work-div ">
+                    <div class="position-absolute  work-div  ">
                         <div class=" blue-background rounded text-white align-middle px-3 pt-2 d-flex">
                             <div>
                                 <h6>Developement, Graphic Design</h6>
@@ -495,13 +494,13 @@
                 </div>
             </div>
             <div class="col my-4">
-                <div class="position-relative overflow-hidden shadow-div rounded">
+                <div class="position-relative overflow-hidden shadow-div rounded d-flex justify-content-center">
                     <img src="images/work2.jpg" alt="" class="rounded">
-                    <div class="position-absolute  work-div ">
+                    <div class="position-absolute  work-div  ">
                         <div class=" blue-background rounded text-white align-middle px-3 pt-2 d-flex">
                             <div>
                                 <h6>Developement, Graphic Design</h6>
-                                <h5>Project Title02</h5>
+                                <h5>Project Title01</h5>
                             </div>
                             <i class="fas fa-plus text-white ms-5 mt-3 clicked"></i>
                         </div>
@@ -510,13 +509,13 @@
                 </div>
             </div>
             <div class="col my-4">
-                <div class="position-relative overflow-hidden shadow-div rounded">
+                <div class="position-relative overflow-hidden shadow-div rounded d-flex justify-content-center">
                     <img src="images/work3.jpg" alt="" class="rounded">
-                    <div class="position-absolute  work-div ">
+                    <div class="position-absolute  work-div  ">
                         <div class=" blue-background rounded text-white align-middle px-3 pt-2 d-flex">
                             <div>
                                 <h6>Developement, Graphic Design</h6>
-                                <h5>Project Title03</h5>
+                                <h5>Project Title01</h5>
                             </div>
                             <i class="fas fa-plus text-white ms-5 mt-3 clicked"></i>
                         </div>
@@ -525,13 +524,13 @@
                 </div>
             </div>
             <div class="col my-4">
-                <div class="position-relative overflow-hidden shadow-div rounded">
+                <div class="position-relative overflow-hidden shadow-div rounded d-flex justify-content-center">
                     <img src="images/work4.jpg" alt="" class="rounded">
-                    <div class="position-absolute  work-div ">
+                    <div class="position-absolute  work-div  ">
                         <div class=" blue-background rounded text-white align-middle px-3 pt-2 d-flex">
                             <div>
                                 <h6>Developement, Graphic Design</h6>
-                                <h5>Project Title04</h5>
+                                <h5>Project Title01</h5>
                             </div>
                             <i class="fas fa-plus text-white ms-5 mt-3 clicked"></i>
                         </div>
@@ -540,13 +539,13 @@
                 </div>
             </div>
             <div class="col my-4">
-                <div class="position-relative overflow-hidden shadow-div rounded">
+                <div class="position-relative overflow-hidden shadow-div rounded d-flex justify-content-center">
                     <img src="images/work5.jpg" alt="" class="rounded">
-                    <div class="position-absolute  work-div ">
+                    <div class="position-absolute  work-div  ">
                         <div class=" blue-background rounded text-white align-middle px-3 pt-2 d-flex">
                             <div>
                                 <h6>Developement, Graphic Design</h6>
-                                <h5>Project Title05</h5>
+                                <h5>Project Title01</h5>
                             </div>
                             <i class="fas fa-plus text-white ms-5 mt-3 clicked"></i>
                         </div>
@@ -555,13 +554,13 @@
                 </div>
             </div>
             <div class="col my-4">
-                <div class="position-relative overflow-hidden shadow-div rounded">
+                <div class="position-relative overflow-hidden shadow-div rounded d-flex justify-content-center">
                     <img src="images/work6.jpg" alt="" class="rounded">
-                    <div class="position-absolute work-div ">
+                    <div class="position-absolute  work-div  ">
                         <div class=" blue-background rounded text-white align-middle px-3 pt-2 d-flex">
                             <div>
                                 <h6>Developement, Graphic Design</h6>
-                                <h5>Project Title06</h5>
+                                <h5>Project Title01</h5>
                             </div>
                             <i class="fas fa-plus text-white ms-5 mt-3 clicked"></i>
                         </div>
@@ -605,15 +604,16 @@
                     <div class="px-4 bg-white top-shadow rounded-bottom our-team-info position-absolute">
                         <h5 class="text-center mt-2">Jen Whyan</h5>
                         <h6 class="text-center blue-color  member-cat">Founder</h6>
-                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris....
+                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec ipsum. Sed aliquam ultrices mauris....
                         </p>
-                        <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top ">
-                            <i class="fab fa-facebook-f col text-white"></i>
-                            <i class="fab fa-twitter col text-white"></i>
-                            <i class="fab fa-linkedin-in col text-white"></i>
-                            <i class="fab fa-google-plus-g col text-white"></i>
-                            <i class="fab fa-tumblr col text-white"></i>
-                        </div>
+
+                    </div>
+                    <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top position-absolute team-icon-div ">
+                        <i class="fab fa-facebook-f col text-white"></i>
+                        <i class="fab fa-twitter col text-white"></i>
+                        <i class="fab fa-linkedin-in col text-white"></i>
+                        <i class="fab fa-google-plus-g col text-white"></i>
+                        <i class="fab fa-tumblr col text-white"></i>
                     </div>
                 </div>
                 <div class="col position-relative team-member-container my-5">
@@ -621,15 +621,16 @@
                     <div class="px-4 bg-white top-shadow rounded-bottom our-team-info position-absolute">
                         <h5 class="text-center mt-2">Mical Peterson</h5>
                         <h6 class="text-center blue-color  member-cat">Founder</h6>
-                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris....
+                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec ipsum. Sed aliquam ultrices mauris....
                         </p>
-                        <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top ">
-                            <i class="fab fa-facebook-f col text-white"></i>
-                            <i class="fab fa-twitter col text-white"></i>
-                            <i class="fab fa-linkedin-in col text-white"></i>
-                            <i class="fab fa-google-plus-g col text-white"></i>
-                            <i class="fab fa-tumblr col text-white"></i>
-                        </div>
+
+                    </div>
+                    <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top position-absolute team-icon-div ">
+                        <i class="fab fa-facebook-f col text-white"></i>
+                        <i class="fab fa-twitter col text-white"></i>
+                        <i class="fab fa-linkedin-in col text-white"></i>
+                        <i class="fab fa-google-plus-g col text-white"></i>
+                        <i class="fab fa-tumblr col text-white"></i>
                     </div>
                 </div>
                 <div class="col position-relative team-member-container my-5">
@@ -637,15 +638,16 @@
                     <div class="px-4 bg-white top-shadow rounded-bottom our-team-info position-absolute">
                         <h5 class="text-center mt-2">Sara Corner</h5>
                         <h6 class="text-center blue-color  member-cat">Founder</h6>
-                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris....
+                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec ipsum. Sed aliquam ultrices mauris....
                         </p>
-                        <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top ">
-                            <i class="fab fa-facebook-f col text-white"></i>
-                            <i class="fab fa-twitter col text-white"></i>
-                            <i class="fab fa-linkedin-in col text-white"></i>
-                            <i class="fab fa-google-plus-g col text-white"></i>
-                            <i class="fab fa-tumblr col text-white"></i>
-                        </div>
+
+                    </div>
+                    <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top position-absolute team-icon-div ">
+                        <i class="fab fa-facebook-f col text-white"></i>
+                        <i class="fab fa-twitter col text-white"></i>
+                        <i class="fab fa-linkedin-in col text-white"></i>
+                        <i class="fab fa-google-plus-g col text-white"></i>
+                        <i class="fab fa-tumblr col text-white"></i>
                     </div>
                 </div>
                 <div class="col position-relative team-member-container my-5">
@@ -653,15 +655,16 @@
                     <div class="px-4 bg-white top-shadow rounded-bottom our-team-info position-absolute">
                         <h5 class="text-center mt-2">Milly Jackson</h5>
                         <h6 class="text-center blue-color  member-cat">Founder</h6>
-                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris....
+                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec ipsum. Sed aliquam ultrices mauris....
                         </p>
-                        <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top ">
-                            <i class="fab fa-facebook-f col text-white"></i>
-                            <i class="fab fa-twitter col text-white"></i>
-                            <i class="fab fa-linkedin-in col text-white"></i>
-                            <i class="fab fa-google-plus-g col text-white"></i>
-                            <i class="fab fa-tumblr col text-white"></i>
-                        </div>
+
+                    </div>
+                    <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top position-absolute team-icon-div ">
+                        <i class="fab fa-facebook-f col text-white"></i>
+                        <i class="fab fa-twitter col text-white"></i>
+                        <i class="fab fa-linkedin-in col text-white"></i>
+                        <i class="fab fa-google-plus-g col text-white"></i>
+                        <i class="fab fa-tumblr col text-white"></i>
                     </div>
                 </div>
                 <div class="col position-relative team-member-container my-5">
@@ -669,15 +672,16 @@
                     <div class="px-4 bg-white top-shadow rounded-bottom our-team-info position-absolute">
                         <h5 class="text-center mt-2">Clark Jackson</h5>
                         <h6 class="text-center blue-color  member-cat">Founder</h6>
-                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris....
+                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec ipsum. Sed aliquam ultrices mauris....
                         </p>
-                        <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top ">
-                            <i class="fab fa-facebook-f col text-white"></i>
-                            <i class="fab fa-twitter col text-white"></i>
-                            <i class="fab fa-linkedin-in col text-white"></i>
-                            <i class="fab fa-google-plus-g col text-white"></i>
-                            <i class="fab fa-tumblr col text-white"></i>
-                        </div>
+
+                    </div>
+                    <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top position-absolute team-icon-div ">
+                        <i class="fab fa-facebook-f col text-white"></i>
+                        <i class="fab fa-twitter col text-white"></i>
+                        <i class="fab fa-linkedin-in col text-white"></i>
+                        <i class="fab fa-google-plus-g col text-white"></i>
+                        <i class="fab fa-tumblr col text-white"></i>
                     </div>
                 </div>
                 <div class="col position-relative team-member-container my-5">
@@ -685,15 +689,16 @@
                     <div class="px-4 bg-white top-shadow rounded-bottom our-team-info position-absolute">
                         <h5 class="text-center mt-2">John Jojo</h5>
                         <h6 class="text-center blue-color  member-cat">Founder</h6>
-                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris....
+                        <p class="text-center text-wrap text-secondary mb-3">Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec ipsum. Sed aliquam ultrices mauris....
                         </p>
-                        <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top ">
-                            <i class="fab fa-facebook-f col text-white"></i>
-                            <i class="fab fa-twitter col text-white"></i>
-                            <i class="fab fa-linkedin-in col text-white"></i>
-                            <i class="fab fa-google-plus-g col text-white"></i>
-                            <i class="fab fa-tumblr col text-white"></i>
-                        </div>
+
+                    </div>
+                    <div class="row row-cols-auto justify-content-center blue-background py-2 px-2 rounded-top position-absolute team-icon-div ">
+                        <i class="fab fa-facebook-f col text-white"></i>
+                        <i class="fab fa-twitter col text-white"></i>
+                        <i class="fab fa-linkedin-in col text-white"></i>
+                        <i class="fab fa-google-plus-g col text-white"></i>
+                        <i class="fab fa-tumblr col text-white"></i>
                     </div>
                 </div>
 
@@ -702,6 +707,7 @@
 
     </section>
     <!-- end Our Creative Team section -->
+
 
 
     <!-- start Our Pricing section -->
@@ -1017,7 +1023,7 @@
 
                         </div>
                         <div class="py-3 px-3 bg-white blog-info-div ">
-                            <h6 class="fw-bold my-2">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
+                            <h6 class="fw-bold my-2 clicked">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
                             <div class="text-secondary pt-2 pb-1 d-flex">
                                 <div class="blog-person">
                                     <i class="far fa-user"></i>
@@ -1060,7 +1066,7 @@
 
                         </div>
                         <div class="py-3 px-3 bg-white blog-info-div ">
-                            <h6 class="fw-bold my-2">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
+                            <h6 class="fw-bold my-2 clicked">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
                             <div class="text-secondary pt-2 pb-1 d-flex">
                                 <div class="blog-person">
                                     <i class="far fa-user"></i>
@@ -1103,7 +1109,7 @@
 
                         </div>
                         <div class="py-3 px-3 bg-white blog-info-div ">
-                            <h6 class="fw-bold my-2">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
+                            <h6 class="fw-bold my-2 clicked">Four Ways To Cheer And Plan Your Self Up On Blue</h6>
                             <div class="text-secondary pt-2 pb-1 d-flex">
                                 <div class="blog-person">
                                     <i class="far fa-user"></i>
@@ -1204,7 +1210,8 @@
                 </i>
                 <h2 class="position-absolute no-wrap phone-h2">If You Like This Grate Work ?? For You Site...</h2>
             </div>
-            <button class="align-self-center bg-white blue-color border border-white rounded-pill py-1 px-4 fs-5 ">purchase Now</button>
+            <button class="align-self-center bg-white blue-color border border-white rounded-pill py-1 px-4 fs-5 ">purchase
+                Now</button>
         </div>
     </section>
     <!-- end purchase section -->
@@ -1222,7 +1229,7 @@
                 <div class="d-flex justify-content-start my-3">
                     <!-- phone icon -->
                     <i class="fas fa-phone-alt position-relative text-white phone-num align-self-center me-4">
-                    <i class="fas fa-wifi phone-signal position-absolute text-white"></i>
+                        <i class="fas fa-wifi phone-signal position-absolute text-white"></i>
                     </i>
                     <p class="text-white"> +20 1142696957</p>
                 </div>
@@ -1235,19 +1242,21 @@
             <div class="col-3">
                 <h2 class="fw-bold text-white">Posts</h2>
                 <hr class="tall-hr mb-5">
-                <div class="d-flex  pb-3 border-secondary border-bottom mb-3">
+                <div class="d-flex  pb-3 border-secondary border-bottom mb-3 position-relative">
                     <img src="images/post1.png" class="post-image-1 align-self-center" alt="">
+                    <div class=" position-absolute post-hover"></div>
                     <div class="align-self-center">
-                        <h6 class="text-white post-h6 clicked">Four ways to cheer and plan your self up on Blue</h6>
+                        <h6 class="text-white post-h6 clicked ">Four ways to cheer and plan your self up on Blue</h6>
                         <i class="far fa-calendar-alt text-secondary"></i>
                         <span class=" text-secondary">December 19, 2018</span>
 
                     </div>
                 </div>
-                <div class="d-flex  ">
+                <div class="d-flex  pb-3 mb-3 position-relative">
                     <img src="images/post2.jpg" class="post-image-2 align-self-center" alt="">
+                    <div class=" position-absolute post-hover"></div>
                     <div class="align-self-center">
-                        <h6 class="text-white post-h6 clicked">Four ways to cheer and plan your self up on Blue</h6>
+                        <h6 class="text-white post-h6 clicked ">Four ways to cheer and plan your self up on Blue</h6>
                         <i class="far fa-calendar-alt text-secondary"></i>
                         <span class=" text-secondary">December 19, 2018</span>
 
@@ -1284,9 +1293,12 @@
     <!-- end various info section -->
 
     <!-- start foooter -->
-    <footer class="black-bg py-4 custom-shadow d-flex justify-content-center clicked">
-        <i class="far fa-copyright blue-color"></i>
-        <h6 class=" blue-color">2021 Developed By Abasery1997</h6>
+    <footer class="black-bg py-4 custom-shadow  d-flex  justify-content-center ">
+        <div class="d-flex clicked justify-content-center">
+            <i class="far fa-copyright blue-color"></i>
+            <h6 class=" blue-color">2021 Developed By Abasery1997</h6>
+        </div>
+
     </footer>
     <!-- end foooter -->
 

@@ -113,10 +113,101 @@ nav {
     border-radius: 0%;
 }
 
-.custom-width {
+.home-drop {
+    right: -110%;
+    animation: homemove 0.4s;
+}
+
+@keyframes homemove {
+    from {
+        right: -70%;
+        opacity: 0;
+    }
+    to {
+        right: -110%;
+        opacity: 1;
+    }
+}
+
+.headers-drop {
+    right: -70%;
+    animation: headersmove 0.4s;
+}
+
+@keyframes headersmove {
+    from {
+        right: -35%;
+        opacity: 0;
+    }
+    to {
+        right: -70%;
+        opacity: 1;
+    }
+}
+
+.blog-drop {
+    right: -50%;
+    animation: blogmove 0.4s;
+}
+
+@keyframes blogmove {
+    from {
+        right: -20%;
+        opacity: 0;
+    }
+    to {
+        right: -50%;
+        opacity: 1;
+    }
+}
+
+.services-drop {
+    right: -70%;
+    animation: servicesmove 0.4s;
+}
+
+@keyframes servicesmove {
+    from {
+        right: -30%;
+        opacity: 0;
+    }
+    to {
+        right: -70%;
+        opacity: 1;
+    }
+}
+
+.features-drop {
+    right: -66%;
+    animation: featuresmove 0.4s;
+}
+
+@keyframes featuresmove {
+    from {
+        right: -25%;
+        opacity: 0;
+    }
+    to {
+        right: -66%;
+        opacity: 1;
+    }
+}
+
+.pages-drop {
     width: 800px;
-    right: 0%;
     right: -100%;
+    animation: pagesmove 0.4s;
+}
+
+@keyframes pagesmove {
+    from {
+        right: -50%;
+        opacity: 0;
+    }
+    to {
+        right: -100%;
+        opacity: 1;
+    }
 }
 
 @media all and (min-width: 992px) {
@@ -165,6 +256,10 @@ nav {
     height: 5px;
     margin-bottom: 50px;
     border: 2px solid white;
+}
+
+.carousel-indicators .active {
+    background: transparent !important;
 }
 
 .carousel-indicators [data-bs-target]:hover {
@@ -270,6 +365,12 @@ hr {
     margin-bottom: 10%;
 }
 
+.node-icon {
+    right: 19%;
+    font-size: 24px;
+    top: 13%;
+}
+
 
 /* hover div style */
 
@@ -297,7 +398,7 @@ hr {
 }
 
 .our-work-image div {
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .shadow-div:hover {
@@ -307,15 +408,17 @@ hr {
 .work-div {
     width: 95%;
     top: 80%;
-    right: -100%;
     opacity: 0.8;
-    height: 16%;
-    display: block;
+    height: 18%;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: scale(0, 1);
+    opacity: 0;
 }
 
 .our-work-image div:hover .work-div {
-    display: block;
-    right: 2%;
+    transform: scale(1, 1);
+    opacity: 0.8;
 }
 
 
@@ -331,7 +434,8 @@ hr {
 
 .our-team-info {
     top: 79%;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
+    height: 189px;
 }
 
 .member-cat {
@@ -343,11 +447,25 @@ hr {
 }
 
 .team-member-container:hover .our-team-info {
-    top: 39%;
+    top: 46%;
 }
 
 .team-member-container:hover .member-cat {
     border-bottom: none;
+}
+
+.team-icon-div {
+    top: 124%;
+    top: 124%;
+    right: 5%;
+    transition-duration: 0.5s;
+    z-index: 3;
+    width: 92%;
+    height: 37px;
+}
+
+.team-member-container:hover .team-icon-div {
+    top: 90%;
 }
 
 
@@ -595,8 +713,22 @@ hr {
 
 .post-image-2 {
     width: 29%;
-    height: 71px;
+    height: 65px;
     margin-right: 2%;
+}
+
+.post-hover {
+    top: 3%;
+    left: 0;
+    width: 29%;
+    height: 76%;
+    background-color: rgba(0, 0, 0, 0.363);
+    z-index: 5;
+    opacity: 0;
+}
+
+.post-hover:hover {
+    opacity: 3;
 }
 
 .popular-h6 {
