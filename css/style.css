@@ -108,105 +108,44 @@ nav {
     color: #0C65EC;
 }
 
-.dropdown-menu {
-    border-top: 2px solid #0C65EC;
-    border-radius: 0%;
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    animation: navmove 0.6s;
 }
 
-.home-drop {
-    right: -110%;
-    animation: homemove 0.4s;
+@keyframes navmove {
+    0% {
+        top: -42%;
+    }
+    100% {
+        top: 0%;
+    }
 }
 
-@keyframes homemove {
-    from {
-        right: -70%;
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        border-top: 2px solid #0C65EC;
+        border-radius: 0%;
         opacity: 0;
+        display: block !important;
+        transition: all 0.4s;
+        visibility: hidden;
+        transform: translateX(-20px);
     }
-    to {
-        right: -110%;
+    .navbar .nav-item:hover .dropdown-menu {
         opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
     }
-}
-
-.headers-drop {
-    right: -70%;
-    animation: headersmove 0.4s;
-}
-
-@keyframes headersmove {
-    from {
-        right: -35%;
-        opacity: 0;
+    .navbar .nav-item .pages-drop {
+        width: 800px;
+        transform: translateX(-650px);
     }
-    to {
-        right: -70%;
-        opacity: 1;
-    }
-}
-
-.blog-drop {
-    right: -50%;
-    animation: blogmove 0.4s;
-}
-
-@keyframes blogmove {
-    from {
-        right: -20%;
-        opacity: 0;
-    }
-    to {
-        right: -50%;
-        opacity: 1;
-    }
-}
-
-.services-drop {
-    right: -70%;
-    animation: servicesmove 0.4s;
-}
-
-@keyframes servicesmove {
-    from {
-        right: -30%;
-        opacity: 0;
-    }
-    to {
-        right: -70%;
-        opacity: 1;
-    }
-}
-
-.features-drop {
-    right: -66%;
-    animation: featuresmove 0.4s;
-}
-
-@keyframes featuresmove {
-    from {
-        right: -25%;
-        opacity: 0;
-    }
-    to {
-        right: -66%;
-        opacity: 1;
-    }
-}
-
-.pages-drop {
-    width: 800px;
-    right: -100%;
-    animation: pagesmove 0.4s;
-}
-
-@keyframes pagesmove {
-    from {
-        right: -50%;
-        opacity: 0;
-    }
-    to {
-        right: -100%;
-        opacity: 1;
+    .navbar .nav-item:hover .pages-drop {
+        transform: translateX(-620px);
     }
 }
 
@@ -762,4 +701,18 @@ hr {
     height: 40px;
     text-align: center;
     border-radius: 50%;
+    visibility: hidden;
+}
+
+.up-animation {
+    animation: upmove 0.6s;
+}
+
+@keyframes upmove {
+    0% {
+        bottom: -14%;
+    }
+    100% {
+        bottom: 4%;
+    }
 }
